@@ -153,6 +153,9 @@ body {
     color: #777;
 }
 
+/* fancy animation */
+
+/* 
 .btn::after {
     content: "";
     display: inline-block;
@@ -164,7 +167,7 @@ body {
     left: 0;
     z-index: -1;
     transition: all .4s;
-}
+} */
 
 .btn-white::after {
     background-color: #FFF;
@@ -177,10 +180,6 @@ body {
 }
 
 .btn-animated {
-    /* animation name, animation duration
-        animation timing function, 
-        animation delay
-     */
     animation: moveInBottom .5s ease-out .75;
     animation-fill-mode: backwards;
 }
