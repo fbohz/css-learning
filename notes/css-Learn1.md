@@ -46,6 +46,56 @@ Have in mind:
 
 With the `inherit` keyword we force inheritance.
 
+**Visual Formatting Model**
+
+The Visual Formatting Model is an algorithm that calculates boxes and determines the layout of these boxes, for each element in the render tree, in order to determine the final layout of the page.
+
+*Box model*
+
+![Screen Shot 2020-06-23 at 1 00 31 PM](https://user-images.githubusercontent.com/15071636/85438386-8bc2cf80-b551-11ea-86fb-71995f347ae6.png)
+
+*Heights and Widths*
+
+![Screen Shot 2020-06-23 at 1 01 07 PM](https://user-images.githubusercontent.com/15071636/85438499-b1e86f80-b551-11ea-9879-e0d89a95d2e5.png)
+
+*Box Size Property as Border-box*
+
+This will set as width and height specified by just width and height.
+
+![Screen Shot 2020-06-23 at 1 02 30 PM](https://user-images.githubusercontent.com/15071636/85438771-eceaa300-b551-11ea-8a51-b767df986fc8.png)
+
+*Box Types*
+
+![Screen Shot 2020-06-23 at 1 04 50 PM](https://user-images.githubusercontent.com/15071636/85439024-2ae7c700-b552-11ea-8e30-b567b7f9cafa.png)
+
+*Position Schemes*
+
+![Screen Shot 2020-06-23 at 1 06 32 PM](https://user-images.githubusercontent.com/15071636/85439241-62567380-b552-11ea-918e-b1bdd0f71cf8.png)
+
+*Stacking Contexts*
+
+Are like layers that form a stack. You can use `z-index` to create static context with `transform()` as well.
+
+**CSS Architecture, Components and BEM**
+
+Use this architect mindset:
+
+![Screen Shot 2020-06-23 at 1 11 06 PM](https://user-images.githubusercontent.com/15071636/85439812-050ef200-b553-11ea-9516-50d507358b19.png)
+
+*Use component driven design*
+
+![Screen Shot 2020-06-23 at 1 12 09 PM](https://user-images.githubusercontent.com/15071636/85439950-2c65bf00-b553-11ea-99ee-6922e05a841e.png)
+
+*Block Element Modifier (BEM)*
+
+Used to name elements.
+
+*Logic Folder Structure*
+
+![Screen Shot 2020-06-23 at 1 15 07 PM](https://user-images.githubusercontent.com/15071636/85440365-93837380-b553-11ea-9604-8fa976b5ce63.png)
+
+You don't need to use all folders, just what you need.
+
 ## CSS Cool Tricks Cheatsheet 😎
 
 For reference check [Gihub repositoryhttps://github.com/fbohz/css-learning/tree/master/museo-demo](https://github.com/fbohz/css-learning/tree/master/museo-demo).
