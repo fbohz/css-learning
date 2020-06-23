@@ -44,7 +44,7 @@ Have in mind:
 
 ![Screen Shot 2020-06-23 at 12 32 07 PM](https://user-images.githubusercontent.com/15071636/85435787-9aa78300-b54d-11ea-9958-bc4455b88e6f.png)
 
-
+With the `inherit` keyword we force inheritance.
 
 ## CSS Cool Tricks Cheatsheet 😎
 
@@ -58,15 +58,15 @@ For reference check [Gihub repositoryhttps://github.com/fbohz/css-learning/tree/
 
 **Converting `px` units to `rem`**
 
-Remember rem is related to root font size so by setting the root font size then use rem you can easily make changes to root without changing all lines of codes. You can specify root font size as this:
+Remember rem is related to root font size so by setting the root font size then use rem you can easily make changes to root without changing all lines of codes. You can specify root font size as this. Now but having root font size as px we could better use percentages. 
 
 ```css
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 ```
 
-This will mean that 1rem is 10px, 2rem is 20px and so forth. You can use rem as this:
+Since usually font size is 16px here we are saying 62.5% which is roughly 10px. This will mean that 1rem is 10px, 2rem is 20px and so forth. You can use rem as this:
 
 ```css
 .logo-box {
@@ -76,6 +76,7 @@ This will mean that 1rem is 10px, 2rem is 20px and so forth. You can use rem as 
  left: 4rem;
 }
 ```
+
 
 **`box-sizing: border-box`**
 
