@@ -98,7 +98,7 @@ You don't need to use all folders, just what you need.
 
 ## CSS Cool Tricks Cheatsheet 😎
 
-For reference check [Gihub repositoryhttps://github.com/fbohz/css-learning/tree/master/museo-demo](https://github.com/fbohz/css-learning/tree/master/museo-demo).
+For reference check [Github repositoryhttps://github.com/fbohz/css-learning/tree/master/museo-demo](https://github.com/fbohz/css-learning/tree/master/museo-demo).
 
 **Three Pillars to write good CSS**
 
@@ -185,8 +185,27 @@ There are various pseudo elements. Take a sneak peak and learn more about them [
 
 With box shadow you can add shadow to elements. Take a look at the [box shadow generator](https://www.cssmatic.com/box-shadow).
 
-## Resources
+### Resources
 <p>👉&nbsp;<a rel="noopener noreferrer" href="https://github.com/jonasschmedtmann/advanced-css-course">Udemy Course material and instructions on GitHub</a></p>
 <p><a rel="noopener noreferrer" href="http://codingheroes.io/resources/">👉 Udemy resources page</a></p>
 [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
 [Box Sizing](https://css-tricks.com/box-sizing/)
+
+## Introduction to SASS
+
+SASS is CSS preprocessor an extension to CSS to add more power. So you write code in SASS files then the SASS compiler compiles it into CSS.
+
+SASS gives us:
+
+![Screen Shot 2020-06-24 at 9 45 53 AM](https://user-images.githubusercontent.com/15071636/85578207-87ed8680-b5ff-11ea-89de-fce958c15780.png)
+
+There are *two SASS syntax*
+
+![Screen Shot 2020-06-24 at 9 47 24 AM](https://user-images.githubusercontent.com/15071636/85578561-c5eaaa80-b5ff-11ea-9cb8-d056cb6a7f6d.png)
+
+SCSS is easier to learn and preferred than Sass.
+
+If you want to play with SASS without installing it first just use [Codepen](https://codepen.io/).
+
+**Variables and Nesting**
+
