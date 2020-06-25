@@ -144,12 +144,13 @@ body {
     content: "";
     display: table;
     clear: both; }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2);
+  .row [class^="col-"] {
     float: left;
     background-color: orange; }
-    .row .col-1-of-2:not(:last-child) {
-      margin-bottom: 8rem; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
