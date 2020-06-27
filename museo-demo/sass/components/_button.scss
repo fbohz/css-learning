@@ -1,33 +1,37 @@
 .btn {
-    &:link, &:visited {
+    &,
+    &:link,
+    &:visited {
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-        /* transition has to be on initial state */
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
     }
     
     &:hover {
         transform: translateY(-3px);
-        /* subtle shadow with a little opacity */
-        box-shadow: 0 10px 20px rgba($color-black, .2);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
-            /* makes it pretty much invisible */
             opacity: 0;
         }
     }
     
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
-    
     
     &--white {
         background-color: $color-white;
