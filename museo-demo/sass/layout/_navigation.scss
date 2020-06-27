@@ -135,9 +135,11 @@
     }
 
     &__checkbox:checked + &__button &__icon {
+        // make middle line transparent
         background-color: transparent;
     }
 
+    // rotate other lines to form cross
     &__checkbox:checked + &__button &__icon::before {
         top: 0;
         transform: rotate(135deg);
