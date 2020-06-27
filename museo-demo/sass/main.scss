@@ -19,20 +19,22 @@
 @import "layout/grid";
 @import "layout/footer";
 @import "layout/navigation";
+
+
 /* CUSTOM - DELETE MAYBE IN FUTURE */
 
-@media screen and (max-width: 800px) {
-    .heading-primary--main {
-        display: block;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-    }
+// @media screen and (max-width: 800px) {
+//     .heading-primary--main {
+//         display: block;
+//         font-size: 2rem;
+//         font-weight: 400;
+//         letter-spacing: 3.5rem;
+//     }
     
-    .heading-primary--sub {
-        display: block;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 1.25rem;
-    }
-}
+//     .heading-primary--sub {
+//         display: block;
+//         font-size: 1rem;
+//         font-weight: 700;
+//         letter-spacing: 1.25rem;
+//     }
+// }
