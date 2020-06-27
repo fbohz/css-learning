@@ -26,6 +26,7 @@
         right: 6.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
+        // custom transition timing function 
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         //transform: scale(80);
@@ -87,10 +88,12 @@
 
 
     //FUNCTIONALITY
+
+    // when click navigation navigation scales
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
-
+    // navigation is visible
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
