@@ -1,4 +1,4 @@
-# CSS Learn Part 1A
+# CSS Learn Part 1
 
 Reference: [Udemy Course](https://www.udemy.com/course/advanced-css-and-sass/)
 
@@ -207,5 +207,94 @@ SCSS is easier to learn and preferred than Sass.
 
 If you want to play with SASS without installing it first just use [Codepen](https://codepen.io/).
 
-**Variables and Nesting**
+**Implement Nesting With SASS**
 
+In SASS you can do 
+
+```css
+.navigation {
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+```
+
+Note `&` replaces selectors up to the point so will be `.navigation li:first-child`. SCSS above is the equivalent in vanilla CSS as:
+
+```css
+.navigation {
+ list-style: none;
+}
+
+.navigation li {
+ display: inline-block;
+}
+
+.navigation li:first-child {
+  margin: 0;
+}
+```
+
+**Mixins, Extends and Functions**
+
+*Mixin* is a reusable piece of code. Let's say we want to implement a [Clearfix](https://www.w3schools.com/howto/howto_css_clearfix.asp) in multiple places. We use the `@mixin` keyword to define it and `@include` where we want to use it.
+
+```css
+@mixin clearfix {
+ &:after {
+     content: "";
+     clear: both;
+     display: table'
+ }   
+}
+
+nav {
+ @include clearfix;
+}
+```
+
+You can also pass in variables to mixin definitions, just make sure when you want to use it also pass in the variable for the mixin to work. Mixins then do become like functions. We could also define functions with the `@function`. Mixins however are used more.
+
+*Extends* is like writing a placeholder then extend those placeholder. We write placeholders with `%` sign. Then we use it with the `@extend` keyword. Only use extends if rules are related. Again, mixins are used more. Do look up and note the difference between extends and mixins.
+
+**Compiling Sass and Hot Reloading**
+
+Remember to install first. Then you can compile by adding this script in package.json:
+
+```json
+"scripts": {
+ "compile:sass": "node-sass sass/main.scss css/style.css -w
+},
+```
+
+The `-w` will keep watching for whatever we do in our code. You can also install `npm i live-server -g`. Then run it as `live-server` on root folder. For the changes to be reflected without needing to reload manually.
+
+
+## Responsive Design Layouts and Design Principles
+
+Consider these basic principles:
+
+![Screen Shot 2020-06-24 at 5 29 36 PM](https://user-images.githubusercontent.com/15071636/85634127-577a0c80-b640-11ea-8e7d-0a10e965094c.png)
+
+There are 3 major types.
+
+- Float Layouts
+- Flexbox
+- CSS Grid
+
+Note Float is the oldest method.
+
+**Custom Grid With Floats**
+
+We build them with columns and rows in mind. 
+
+
+# CSS Learn Part 2A
+
+## Responsive Design
