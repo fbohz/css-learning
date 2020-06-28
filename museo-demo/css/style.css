@@ -732,6 +732,12 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto; } }
 
+@media screen and (max-width: 800px) {
+  .popup__img {
+    display: none; }
+  .popup__left {
+    display: none; } }
+
 .header {
   height: 95vh;
   /* gradient on image right to bottom */
