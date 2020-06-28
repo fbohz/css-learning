@@ -30,9 +30,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 30%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -79,11 +76,9 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -98,13 +93,24 @@ body {
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    animation-timing-function: ease-out;
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */ }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -113,12 +119,17 @@ body {
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(0.8);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
