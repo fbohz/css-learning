@@ -616,6 +616,7 @@ body {
   display: inline-block; }
   @media only screen and (max-width: 56.25em) {
     .form__radio-group {
+      display: block;
       width: 100%;
       margin-bottom: 2rem; } }
 
