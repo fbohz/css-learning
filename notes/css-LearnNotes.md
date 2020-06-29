@@ -298,3 +298,66 @@ We build them with columns and rows in mind.
 # CSS Learn Part 2A
 
 ## Responsive Design
+
+**Desktop vs Mobile First**
+
+![Screen Shot 2020-06-28 at 10 19 08 AM](https://user-images.githubusercontent.com/15071636/85951445-ddd86c00-b928-11ea-996e-cd2aa10dfc33.png)
+
+Mobile first is very bare minimal but might end up very limited on desktop.
+
+Pros vs. Cons
+
+![Screen Shot 2020-06-28 at 10 26 27 AM](https://user-images.githubusercontent.com/15071636/85951618-e1202780-b929-11ea-83d7-0d43d26a06ea.png)
+
+Both are important.
+
+**Max Width vs Min-Width Media Queries**
+
+![Screen Shot 2020-06-28 at 10 22 56 AM](https://user-images.githubusercontent.com/15071636/85951552-5ccda480-b929-11ea-9beb-1e3ddb2da9ba.png)
+
+Now if there are conflicting rules in media queries then the **last query will apply**.
+
+**Breakpoints**
+
+Is where we want our design to change. Here's a good method that uses [screen resolution stats](https://gs.statcounter.com/screen-resolution-stats).
+
+![Screen Shot 2020-06-28 at 10 38 23 AM](https://user-images.githubusercontent.com/15071636/85951866-88518e80-b92b-11ea-942e-36ad550cf9cc.png)
+
+
+## Responsive Images
+
+Responsive images means sending the right image to the right device. So smaller images to smaller screens. Some techniques:
+
+![Screen Shot 2020-06-28 at 6 37 49 PM](https://user-images.githubusercontent.com/15071636/85961209-878e1c00-b96e-11ea-8c02-aeeb87a3e025.png)
+
+## Browser Support
+
+[Can I Use](https://caniuse.com/), for browser support checking.
+
+You can do graceful degradation with `@supports`. Example:
+
+```css
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+}
+```
+
+## Build Processes
+
+We can implement simple NPM build processes after we finish a feature.
+
+![Screen Shot 2020-06-28 at 7 35 10 PM](https://user-images.githubusercontent.com/15071636/85962487-9a0c5380-b976-11ea-8dae-b021b308f223.png)
+
+We do this on `package.json`, check it on [Github repository](https://github.com/fbohz/css-learning/blob/master/museo-demo/package.json).
+
+There are a couple of NPM packages we use, we can install as `npm i concat --save-dev`, `npm i autoprefixer --save-dev`, `npm i postcss-cli --save-dev`, `npm i npm-run-all --save-dev`.
+
+Also note the `--parallel` flag on start. It means both run at the same time.
+
+So to run all you'll just do:
+
+`npm run build:css`
+
+And your css will be compiled, concat, compressed and ready for production! 
