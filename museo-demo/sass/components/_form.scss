@@ -65,6 +65,8 @@
 
     &__radio-input {
         display: none;
+        // opacity: 0;
+
     }
     
     &__radio-label {
@@ -100,7 +102,11 @@
         }
     }
 
-    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    &__radio-input:checked + &__radio-label {
+        background: transparent;
+    }
+
+    &__radio-input:checked + &__radio-label &__radio-button::after {
         opacity: 1;
     }
 }
